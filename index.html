@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable row coloum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="inputs">
+        <input type="text" placeholder="Name" id="inp1">
+        <input type="text" placeholder="Father Name" id="inp2">
+        <input type="text" placeholder="Mother Name" id="inp3">
+        <input type="text" placeholder="Age"  id="inp4">
+        <input type="text" placeholder="Rool No" id="inp5">
+        <input type="text" placeholder="Phone No" id="inp6"><br><br>
+        <select  id="sel">
+            <option value="">Empty</option>
+            <option value="Six" selected>Six</option>
+            <option value="Seven">Seven</option>
+            <option value="Eight">Eight</option>
+            <option value="Nine">Nine</option>
+            <option value="Ten">Ten</option>
+        </select>
+        <select  id="sel1">
+            <option value="">Empty</option>
+            <option value="Male" selected>Male</option>
+            <option value="Fmale">Fmale</option>
+        </select>
+        <select id="sel2">
+            <option value="">Empty</option>
+            <option value="A" selected>A</option>
+            <option value="B">B</option>
+        </select>
+        <select  id="sel3">
+            <option value="">Empty</option>
+            <option value="A+" selected>A+</option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="Fail">Fail</option>
+        </select>
+        <button type="button" id="btn1">Add</button>
+        <button type="button" id="btn2">Edit</button>
+        <button type="button" id="btn3">Remove</button>
+        <button type="button" id="btn4">clear all</button>
+    </div>
+    <input type="text" id="inp" placeholder="search"><br><br>
+    <h4 class="by-name">search by</h4>
+    <select id="serchItem">
+        <option value="">None</option>
+        <option value="0">Name</option>
+        <option value="1">Father name</option>
+        <option value="2">Mother name</option>
+        <option value="3">Age</option>
+        <option value="4">Rool No</option>
+        <option value="5">Class Name</option>
+        <option value="6">Section</option>
+        <option value="7">Gread</option>
+        <option value="8">Gender</option>
+        <option value="9">Phone No</option>
+    </select>
+    <div class="container">
+        <div class="tab">
+            <table id="table" border="1px">
+               <tr>
+                   <th>Name</th>
+                   <th>Father Name</th>
+                   <th>Mother Name</th>
+                   <th>Age</th>
+                   <th>Rool No</th>
+                   <th>Class Name</th>
+                   <th>Section</th>
+                   <th>Grade</th>
+                   <th>Gender</th>
+                   <th>Phone No</th>
+               </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>showData();</script>
+</body>
+</html>
